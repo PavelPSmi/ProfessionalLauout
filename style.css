@@ -1,0 +1,303 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato',sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+
+/*navigation*/
+.Header {
+    
+    height: 75px;
+    background-color: #222222;
+    filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+.conainer {
+    margin: 0 auto;
+    max-width: 1600px;
+    height: 100%;
+}
+.navigation {
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navLeft {
+    display: flex;
+    justify-content: space-between;
+    Width: 111px;
+    Height: 38px;
+    padding-left: 231px;
+    padding-top: 18px;
+    align-items: baseline;
+    
+}
+.navRight {
+    display: flex;
+    justify-content: space-between;
+    Width: 160px;
+    Height: 29px;
+    padding-top: 27px;
+    padding-right: 240px;
+    align-items: baseline;
+}
+.Burger {
+    padding-bottom: 2px;
+}
+.BasketBuy {
+    position: relative;
+}
+.Buy {
+    position: absolute;
+    color: white;
+    display:inline-block;
+    background-color: #F16D7F;
+    background-position: center;
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+    text-align: center;
+    
+    margin-left: -8px;
+    margin-top: -4px;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;  
+}
+/*offer*/
+.offer {
+    background-color: #F1E4E6;;
+    height: 764px;
+}
+.OfferPosition {
+    display: flex;
+}
+.offerBlockLeft, .offerBlockRight {
+    max-width: 50%;
+    
+}
+
+
+.offerBlockLeft img {
+    object-fit: cover;
+        width: 100%;
+        height: 100%;
+    
+}
+.offerBlockRight {
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+.Brand {
+    width: 405px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: 64px;
+    margin-top: 335px;
+
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-left: 12px solid #F16D7F;
+    padding-left: 15px;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+.TheBrand{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 44px;
+    color: #222222;
+    
+}
+.OfLuxerious{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    color: #222222;
+}
+.RedTheBrand{
+    color: #F16D7F;
+}
+
+
+
+
+/*mainspecialOffer*/
+.main{
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 100%;
+    
+}
+.specialOffer {
+    margin-top: 64px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 260px 180px;
+}
+.specialOffer div:nth-child(4) {
+    grid-column: 1/-1;
+
+}
+
+.imgOffers {
+    
+    position: relative;
+    text-align: center;
+    font-family: 'Lato',sans-serif;
+    font-style: normal;
+    
+    
+}
+
+.imgOffers span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-weight: 400;
+    font-size: 16px;
+    Line-height: 26px;
+    color: white;
+
+}
+
+.imgOffers img {
+    object-fit: cover;
+        width: 100%;
+        height: 100%;
+}
+.forWomen {
+    
+    
+    
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    
+    
+    color: #F16D7F;
+}
+
+
+
+/*laptop*/
+@media (max-width:768px){
+    .navLeft {
+        padding-left: 32px;
+    }
+    .navRight {
+        padding-right: 32px;
+        Width: 169px;
+        Height: 37px;
+
+    }
+    .LKroom {
+        padding-left: 25px;
+        padding-right: 42px;
+    }
+    /*laptopOffer*/
+    .offer{
+        height: 368px;
+    }
+    .Brand {
+        width: 311px;
+        margin: 0 auto;
+        margin-top: 138px;
+        text-shadow: none;
+
+    }
+    .TheBrand{
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 40px;
+        
+    }
+    .OfLuxerious{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    /*mainspecialOffer*/
+    .specialOffer {
+        margin-top: 20px;
+        margin-left: 16px;
+        margin-right: 16px;
+        gap: 19px;
+        
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 167px 116px;
+    }
+}
+
+/*mobile*/
+@media (max-width:377px) {
+    .navLeft {
+        padding-left: 16px;
+    }
+    .navRight {
+        padding-top: 25px;
+        padding-right: 16px;
+        width: 32px;
+        height: 23px;
+    }
+    a .LKroom, .BasketBuy {
+        display: none;
+    }
+    /*mobileOffer*/
+    .offerBlockLeft {
+        display: none;
+    }
+    .offer{
+        height: 363px;
+    }
+    .Brand {
+        
+        border-top-width: 148px;
+        margin-left: 56px;
+
+        width: 263px;
+        margin-top: 138px;
+    }
+    .TheBrand{
+        
+        font-weight: 700;
+        font-size: 38px;
+        
+    }
+    .OfLuxerious{
+        font-weight: 700;
+        font-size: 20px;
+        
+    }
+/*mainspecialOffer*/
+
+
+
+    
+
+    .specialOffer {
+        margin-top: 64px;
+        margin-left: 16px;
+        margin-right: 16px;
+        gap: 32px;
+        
+        grid-template-columns: 3fr;
+        grid-template-rows: repeat(3, 248px) 111px;
+        
+    }
+
+
+}
